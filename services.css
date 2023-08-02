@@ -1,0 +1,305 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@400;700&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* reset */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar */
+
+#nav{
+    display: flex;
+    background-color: #374248;
+    border-bottom: 3px solid #e6491f;
+    width: 100%;
+    height: 120px;
+}
+
+#left{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+}
+
+#right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+#left .web-name{
+    color: white;
+    font-size: 2rem;
+}
+
+#left span{
+    color: #e6491f;
+}
+
+#right .ancher{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 250px;
+}
+
+#right .ancher a{
+    text-decoration: none;
+    color: white;
+}
+
+.current {
+    color:#e8491d !important;
+    font-weight: bold;
+}
+
+a:hover{
+    color:#e8491d !important;
+    font-weight: bold;
+}
+
+/* subscribe */
+
+#Subscribe{
+    display: flex;
+    align-items: center;
+    background-color: #374248;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+#Subscribe .subscribe{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    padding-left: 10%;
+    font-size: 1.5rem;
+}
+
+#Subscribe .button{
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+#Subscribe input{
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    margin-right: 5px;
+}
+
+#Subscribe button{
+    background-color: #e6491f;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    color: white;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6491f;
+    height: 150px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* main */
+
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+#main #left{
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+.box{
+    background-color: #e6e6e6;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px #cccccc solid;
+}
+
+.box .box-word{
+    width: 600px;
+    padding: 20px;
+}
+
+.box-word p{
+    line-height: 50px;
+}
+
+#main #right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 62px;
+    margin-left: 62px;
+}
+
+#main #background{
+    background-color: #35424a;
+    color: white;
+    height: auto;
+    padding: 15px;
+    padding-top: 30px;
+    width: 90%;
+}
+
+#main #background form{
+    overflow: hidden;
+    width: 95%;
+}
+
+#main #background .data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#main #background input{
+    padding: 5px;
+    padding-right: 190px;
+}
+
+#main #background textarea{
+    padding-right: 193px;
+    padding-left: 5px;
+}
+
+#main .button{
+    margin-top: 10px;
+}
+
+#main button{
+    width: 100px;
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding: 0 20px 0;
+    color: white;
+}
+
+@media(max-width:768px){
+    /* nav bar */
+    #nav{
+        flex-direction: column;
+    }
+
+    #left{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #right{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* subscribe */
+    #Subscribe{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    #Subscribe .subscribe{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #Subscribe .button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }  
+    
+    #Subscribe input{
+        padding-right: 200px ;
+        margin-bottom: 5px;
+    }
+    
+    #Subscribe button{
+        padding-right: 400px ;
+        margin-bottom: 20px;
+    }
+
+    /* main */
+
+    #main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main #left{
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box{
+        width: 400px;
+    }
+
+    .box .box-word{
+        width: 300px;
+    }
+
+    .box-word p{
+        line-height: 30px;
+    }
+
+    #main #right{
+        width: 412px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px ;
+    }
+}

@@ -1,0 +1,267 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@400;700&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* reset */
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* nav bar */
+
+#nav{
+    display: flex;
+    background-color: #374248;
+    border-bottom: 3px solid #e6491f;
+    width: 100%;
+    height: 120px;
+}
+
+#left{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+}
+
+#right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+#left .web-name{
+    color: white;
+    font-size: 2rem;
+}
+
+#left span{
+    color: #e6491f;
+}
+
+#right .ancher{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 250px;
+}
+
+#right .ancher a{
+    text-decoration: none;
+    color: white;
+}
+
+.current {
+    color:#e8491d !important;
+    font-weight: bold;
+}
+
+a:hover{
+    color:#e8491d !important;
+    font-weight: bold;
+}
+
+/* subscribe */
+
+#Subscribe{
+    display: flex;
+    align-items: center;
+    background-color: #374248;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+#Subscribe .subscribe{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    padding-left: 10%;
+    font-size: 1.5rem;
+}
+
+#Subscribe .button{
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+#Subscribe input{
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    margin-right: 5px;
+}
+
+#Subscribe button{
+    background-color: #e6491f;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    color: white;
+}
+
+/* main */
+
+#main{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#main #left{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0 100px;
+}
+
+#left div{
+    width: 100%;
+    background-color: #374248;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+
+#main #right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#right div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #374248;
+    padding: 20px;
+    color: white;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6491f;
+    height: 150px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* responsive */
+
+@media(max-width:768px){
+    /* nav bar */
+    #nav{
+        flex-direction: column;
+    }
+
+    #left{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #right{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-top: -13px;
+    }
+
+    #right .ancher{
+        height: 1px;
+    }
+
+    /* subscribe */
+    #Subscribe{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    #Subscribe .subscribe{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #Subscribe .button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }  
+    
+    #Subscribe input{
+        padding-right: 200px ;
+        margin-bottom: 5px;
+    }
+    
+    #Subscribe button{
+        padding-right: 400px ;
+        margin-bottom: 20px;
+    }
+
+    /* main */
+    #main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main #left{
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #left div{
+        margin-bottom: 20px;
+    }
+
+    #main #right{
+        align-items: center;
+    }
+}
